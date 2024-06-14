@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    margin:  auto;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 500px;
+}
+
+.box {
+    flex-basis: 20%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+}
+.box:nth-child(even) {
+    background-color: blue;
+}
+h1 {
+    text-align: center;
+}
