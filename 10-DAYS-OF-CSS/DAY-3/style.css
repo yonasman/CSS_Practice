@@ -1,0 +1,43 @@
+.layers {
+    display: flex;
+    flex-direction: column;
+}
+.layers .row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    width: 100%;
+}
+.layers .row .box {
+    display: flex;
+    height: 100px;
+    flex-basis: 100px;
+    background-color: red;
+    color: #fff;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.layers .row .box .inner {
+    width: 60%;
+    height: 60%;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layers .row:nth-child(2) .box {
+    background-color: blue;
+}
+.layers .row:nth-child(3) .box {
+    background-color: purple;
+}
+.layers .row:nth-child(4) .box {
+    background-color: orange;
+}
+.layers .row:nth-child(5) .box {
+    background-color: green;
+}
