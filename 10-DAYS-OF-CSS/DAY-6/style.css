@@ -11,3 +11,41 @@ body {
     background-color: lightgray;
     width: 60%;
 }
+.keys-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+}
+.keys-row {
+    display: flex;
+    margin-bottom: 15px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 3px;
+}
+.key.letter {
+    flex: 1;
+}
+.key.enter {
+    flex: 3.2 ;
+}
+.key.space {
+    flex: 6;
+}
+.key.alt {
+    flex: 1.5;
+}
+.key.ctrl {
+    flex: 1.5;
+}
