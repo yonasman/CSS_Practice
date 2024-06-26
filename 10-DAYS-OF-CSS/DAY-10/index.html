@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAY-10 (Drop down navigation bar)</title>
-    <link rel="stylesheet" href="./app.js">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- link to font awesome fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <p>Hello</p>
+    <div class="nav-container">
+        <ul class="menu">
+            <li><i class="fa fa-home"></i> Home</li>
+            <li> <i class="fa fa-info-circle"></i>About Us
+                <ul class="menu-dropdown">
+                    <li>About Us link 1</li>
+                    <li>About Us link 2</li>
+                    <li>About Us link 3 <span>></span>
+                        <ul class="menu-sub-dropdown">
+                            <li>About Us sub link 1</li>
+                            <li>About Us sub link 2</li>
+                            <li>About Us sub link 3</li>
+                            <li>About Us sub link 4</li>
+                        </ul>
+                    </li>
+                    <li>About Us link 4</li>
+                    <li>About Us link 5</li>
+                </ul>
+            </li>
+            <li><i class="fa fa-cog"></i> Services
+                <ul class="menu-dropdown">
+                    <li>Services link 1</li>
+                    <li>Services link 2</li>
+                    <li>Services link 3 <span>></span>
+                        <ul class="menu-sub-dropdown">
+                            <li>Services sub link 1</li>
+                            <li>Services sub link 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li> <i class="fa fa-camera"></i>Gallery</li>
+            <li> <i class="fa fa-user"></i>Contact Us
+                <ul class="menu-dropdown">
+                    <li>Contact Us link 1 <span>></span>
+                        <ul class="menu-sub-dropdown">
+                            <li>Contact Us sub link 1</li>
+                            <li>Contact Us sub link 2</li>
+                            <li>Contact Us sub link 3</li>
+                        </ul>
+                    </li>
+                    <li>Contact Us link 2</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
